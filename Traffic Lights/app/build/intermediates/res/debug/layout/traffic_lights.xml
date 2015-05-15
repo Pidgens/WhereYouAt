@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yellowLight"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription=""
+        android:src="@drawable/light_off" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/redLight"
+        android:src="@drawable/light_off"
+        android:layout_above="@+id/yellowLight"
+        android:layout_alignLeft="@+id/yellowLight"
+        android:layout_alignStart="@+id/yellowLight" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/greenLight"
+        android:layout_below="@+id/yellowLight"
+        android:layout_alignLeft="@+id/yellowLight"
+        android:layout_alignStart="@+id/yellowLight"
+        android:src="@drawable/light_off" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="green"
+        android:id="@+id/green"
+        android:layout_alignTop="@+id/yellow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        android:textColor="#ff000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="yellow"
+        android:id="@+id/yellow"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="red"
+        android:id="@+id/red"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:textColor="#ff000000" />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Derek%20Chiu/AndroidStudioProjects/Traffic%20Lights/app/src/main/res/layout/traffic_lights.xml -->
